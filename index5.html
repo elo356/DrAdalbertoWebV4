@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Adalberto Echevarría Feliciano | Medicina Primaria y Preventiva</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { scroll-behavior: smooth; font-family: 'Poppins', sans-serif; }
+    .fade-up { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-900 to-blue-600 text-white py-4 fixed w-full z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <h1 class="text-xl font-semibold tracking-wide">Dr. Adalberto Echevarría Feliciano</h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="#inicio" class="hover:text-blue-200">Inicio</a>
+        <a href="#servicios" class="hover:text-blue-200">Servicios</a>
+        <a href="#equipo" class="hover:text-blue-200">Equipo</a>
+        <a href="#galeria" class="hover:text-blue-200">Galería</a>
+        <a href="#contacto" class="hover:text-blue-200">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="relative bg-cover bg-center h-screen" style="background-image: url('consultorio-hero.jpg');">
+    <div class="absolute inset-0 bg-blue-900 bg-opacity-70"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4 fade-up">Tu salud, nuestra prioridad</h2>
+      <p class="text-lg md:text-xl mb-8 fade-up">Medicina primaria y preventiva con atención humana y profesional en Añasco, Puerto Rico.</p>
+      <a href="#contacto" class="bg-white text-blue-900 px-8 py-3 rounded-full font-semibold shadow hover:bg-blue-100 transition fade-up">Agenda tu cita</a>
+    </div>
+  </section>
+
+  <!-- Acerca -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6 md:flex md:items-center gap-10 fade-up">
+      <div class="md:w-1/2">
+        <img src="dr-adalberto.jpg" alt="Dr. Adalberto Echevarría" class="rounded-2xl shadow-lg">
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0">
+        <h3 class="text-3xl font-semibold text-blue-900 mb-4">Sobre el Dr. Echevarría</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          El <strong>Dr. Adalberto Echevarría Feliciano</strong> cuenta con amplia experiencia en medicina primaria y preventiva,
+          ofreciendo servicios integrales para el cuidado de tu salud, con atención personalizada, profesionalismo y calidez humana.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          En nuestra clínica, creemos que prevenir es tan importante como curar. Por eso, brindamos orientación y seguimiento continuo a cada paciente.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-semibold text-blue-900 mb-10 fade-up">Nuestros Servicios</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition fade-up">
+          <h4 class="text-xl font-semibold text-blue-800 mb-3">Medicina Primaria</h4>
+          <p class="text-gray-600">Evaluación médica general, chequeos preventivos y control de condiciones crónicas.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition fade-up">
+          <h4 class="text-xl font-semibold text-blue-800 mb-3">Cirugía Menor</h4>
+          <p class="text-gray-600">Procedimientos ambulatorios seguros, rápidos y realizados en nuestras instalaciones.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition fade-up">
+          <h4 class="text-xl font-semibold text-blue-800 mb-3">Telemedicina</h4>
+          <p class="text-gray-600">Atención médica desde la comodidad de tu hogar mediante consultas virtuales.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition fade-up">
+          <h4 class="text-xl font-semibold text-blue-800 mb-3">Certificados de Salud</h4>
+          <p class="text-gray-600">Certificados médicos, licencias de conducir y certificados laborales.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition fade-up">
+          <h4 class="text-xl font-semibold text-blue-800 mb-3">Visita al Hogar</h4>
+          <p class="text-gray-600">Atención médica personalizada en la comodidad de tu residencia.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition fade-up">
+          <h4 class="text-xl font-semibold text-blue-800 mb-3">Control de Peso</h4>
+          <p class="text-gray-600">Programas de manejo de peso saludable y acompañamiento nutricional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipo -->
+  <section id="equipo" class="py-20 bg-blue-900 text-white text-center">
+    <h3 class="text-3xl font-semibold mb-10 fade-up">Nuestro Equipo Médico</h3>
+    <p class="max-w-2xl mx-auto mb-12 text-blue-100 fade-up">
+      Un equipo comprometido con ofrecerte atención integral, humana y de alta calidad.
+    </p>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+      <div class="bg-white text-gray-800 p-6 rounded-2xl shadow-lg fade-up">
+        <img src="equipo1.jpg" alt="Doctor" class="rounded-full w-40 h-40 mx-auto mb-4 object-cover">
+        <h4 class="text-lg font-semibold text-blue-900">Dr. Adalberto Echevarría</h4>
+        <p class="text-gray-500">Medicina Primaria y Cirugía Menor</p>
+      </div>
+      <div class="bg-white text-gray-800 p-6 rounded-2xl shadow-lg fade-up">
+        <img src="equipo2.jpg" alt="Enfermera" class="rounded-full w-40 h-40 mx-auto mb-4 object-cover">
+        <h4 class="text-lg font-semibold text-blue-900">Lissette Morales</h4>
+        <p class="text-gray-500">Enfermera Clínica</p>
+      </div>
+      <div class="bg-white text-gray-800 p-6 rounded-2xl shadow-lg fade-up">
+        <img src="equipo3.jpg" alt="Asistente" class="rounded-full w-40 h-40 mx-auto mb-4 object-cover">
+        <h4 class="text-lg font-semibold text-blue-900">Juan Pérez</h4>
+        <p class="text-gray-500">Asistente Administrativo</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria" class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-semibold text-blue-900 mb-10 fade-up">Nuestras Instalaciones</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="oficina1.jpg" class="rounded-xl shadow-lg hover:scale-105 transition fade-up" alt="Recepción">
+        <img src="oficina2.jpg" class="rounded-xl shadow-lg hover:scale-105 transition fade-up" alt="Área de espera">
+        <img src="oficina3.jpg" class="rounded-xl shadow-lg hover:scale-105 transition fade-up" alt="Consultorio principal">
+        <img src="oficina4.jpg" class="rounded-xl shadow-lg hover:scale-105 transition fade-up" alt="Área de procedimientos">
+        <img src="oficina5.jpg" class="rounded-xl shadow-lg hover:scale-105 transition fade-up" alt="Sala de consulta">
+        <img src="oficina6.jpg" class="rounded-xl shadow-lg hover:scale-105 transition fade-up" alt="Fachada exterior">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6 text-center fade-up">
+      <h3 class="text-3xl font-semibold text-blue-900 mb-8">Contáctanos</h3>
+      <p class="max-w-2xl mx-auto mb-10 text-gray-600">
+        Golden Plaza #3 Carretera 402 KM 2.1 Bo. Marías, Añasco, Puerto Rico<br>
+        <strong>Teléfono:</strong> <a href="tel:+19396996336" class="text-blue-700 hover:underline">+1 939-699-6336</a><br>
+        <strong>Email:</strong> <a href="mailto:adalbertoechevarriamd@gmail.com" class="text-blue-700 hover:underline">adalbertoechevarriamd@gmail.com</a>
+      </p>
+      <a href="https://maps.google.com/?q=Golden Plaza #3 Carretera 402 KM 2.1 Bo. Marias, Añasco, Puerto Rico"
+         target="_blank" class="bg-blue-900 text-white px-8 py-3 rounded-full shadow hover:bg-blue-800 transition">Ver en Google Maps</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-blue-100 text-center py-6">
+    <p>© 2025 Clínica Dr. Adalberto Echevarría Feliciano | Desarrollado por Amelo Studio</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
